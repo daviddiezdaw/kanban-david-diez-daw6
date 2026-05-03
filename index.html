@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanban DAW6 David Díez</title>
+  <link rel="stylesheet" href="css/estils.css">
+  <link rel="icon" href="#">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="max-w-6xl mx-auto">
+
+<header>
+  <h1 class="text-2xl font-bold mb-4">Gestor de Tasques Kanban David Díez</h1>
+</header>
+
+<main>
+
+  <!-- Formulari -->
+  <section id="formulari">
+    <h2 class="text-xl font-semibold mt-4 mb-2">Nova tasca</h2>
+
+    <form id="formTasca">
+      <label>Títol:</label>
+      <input type="text" id="titol" required>
+
+      <label>Descripció:</label>
+      <textarea id="descripcio"></textarea>
+
+      <label>Prioritat:</label>
+      <select id="prioritat">
+          <option value="baixa">Baixa</option>
+          <option value="mitjana">Mitjana</option>
+          <option value="alta">Alta</option>
+      </select>
+
+      <label>Data límit:</label>
+      <input type="date" id="dataVenciment">
+
+      <button type="submit">Afegir tasca</button>
+    </form>
+  </section>
+
+  <!-- Filtres -->
+  <section id="filtres">
+    <h2 class="text-xl font-semibold mt-4 mb-2">Filtres i cerca</h2>
+
+    <input type="text" id="cercaText" placeholder="Cercar...">
+
+    <select id="filtreEstat">
+      <option value="tots">Tots els estats</option>
+      <option value="perFer">Per fer</option>
+      <option value="enCurs">En curs</option>
+      <option value="fet">Fet</option>
+    </select>
+
+    <select id="filtrePrioritat">
+      <option value="tots">Totes les prioritats</option>
+      <option value="baixa">Baixa</option>
+      <option value="mitjana">Mitjana</option>
+      <option value="alta">Alta</option>
+    </select>
+
+  <!-- Estadístiques -->
+  <section id="estadistiques">
+    <h2 class="text-xl font-semibold mt-4 mb-2">Estadístiques</h2>
+
+    <p>Total tasques: <span id="totalTasques">0</span></p>
+    <p>Per fer: <span id="numPerFer">0</span></p>
+    <p>En curs: <span id="numEnCurs">0</span></p>
+    <p>Fet: <span id="numFet">0</span></p>
+    <p>% completades: <span id="percentatge">0</span>%</p>
+  </section>
+
+  <!-- Tauler Kanban -->
+  <section id="tauler" class="flex flex-col md:flex-row gap-4">
+
+    <div id="perFer" class="columna flex-1 p-3 border rounded bg-gray-50">
+      <h3>Per fer</h3>
+    </div>
+
+    <div id="enCurs" class="columna flex-1 p-3 border rounded bg-gray-50">
+      <h3>En curs</h3>
+    </div>
+
+    <div id="fet" class="columna flex-1 p-3 border rounded bg-gray-50">
+      <h3>Fet</h3>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>DAW6 - Kanban</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
