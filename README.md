@@ -23,6 +23,7 @@ Les dades es guarden amb localStorage i es mantenen després de recarregar la p�
 * Estadístiques en temps real
 * Persistència de dades
 * Disseny responsive
+* Drag & drop per moure tasques entre columnes
 
 ---
 
@@ -76,6 +77,7 @@ README.md
 ## 🧠 Notes
 
 El projecte es va desenvolupar inicialment amb CSS i posteriorment es va integrar Tailwind per adaptar el layout i complir els requisits de l’enunciat.
+S’ha implementat funcionalitat de drag & drop com a millora opcional.
 
 ---
 
