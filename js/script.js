@@ -65,6 +65,11 @@ function renderTauler(tasques) {
 
       <button onclick="eliminarTasca('${tasca.id}')">Eliminar</button>
     `
+    div.setAttribute("draggable", true)
+
+    div.addEventListener("dragstart", function(event) {
+      event.dataTransfer.setData("id", tasca.id)
+    })
 
     document.getElementById(tasca.estat).appendChild(div)
   })
@@ -177,3 +182,27 @@ function actualitzarEstadistiques() {
   document.getElementById("percentatge").textContent = percentatge
 }
 
+const columnes = document.querySelectorAll(".columna")
+
+columnes.forEach(columna => {
+
+  columna.addEventListener("dragover", function(event) {
+    event.preventDefault()
+  })
+
+  columna.addEventListener("drop", function(event) {
+    event.preventDefault()
+
+    const id = event.dataTransfer.getData("id")
+    const nouEstat = columna.id
+
+    const tasca = tasques.find(t => t.id === id)
+
+    tasca.estat = nouEstat
+
+    guardarTasques()
+    renderTauler(tasques)
+    actualitzarEstadistiques()
+  })
+
+})
