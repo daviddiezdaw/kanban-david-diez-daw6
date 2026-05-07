@@ -53,7 +53,7 @@ README.md
   👉 https://github.com/daviddiezdaw/kanban-david-diez-daw6
 
 * 🚀 Aplicació desplegada:
-  👉 (pendent de desplegament)
+ 👉 https://daviddiezdaw.github.io/kanban-david-diez-daw6/
 
 ---
 
