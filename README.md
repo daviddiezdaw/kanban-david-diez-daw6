@@ -28,13 +28,13 @@ Les dades es guarden amb localStorage i es mantenen després de recarregar la p�
 
 ## 🧭 Guia d’ús
 
-* **Afegir tasca → formulari**
+* **Afegir tasca → formulari**  
   Omple els camps de “Títol” i “Descripció”, selecciona la prioritat i la data límit, i prem el botó “Afegir tasca” per crear-la.
-* **Canviar estat → selector o drag & drop**
+* **Canviar estat → selector o drag & drop**  
   Pots canviar l’estat d’una tasca mitjançant el selector de la targeta o arrossegant-la entre columnes (drag & drop).
-* **Eliminar → botó**
+* **Eliminar → botó**  
   Prem el botó “Eliminar” de la tasca i confirma l’acció per eliminar-la definitivament.
-* **Filtrar i cercar → secció de filtres**
+* **Filtrar i cercar → secció de filtres**  
   Utilitza els filtres per estat i prioritat, així com el camp de cerca per trobar tasques específiques.
 
 ---
