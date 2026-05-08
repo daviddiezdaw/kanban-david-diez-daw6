@@ -56,3 +56,12 @@ body {
     margin-bottom: 15px;
   }
 }
+
+button:hover {
+  opacity: 0.8;
+}
+
+.tasca:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+}
